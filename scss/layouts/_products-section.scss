@@ -1,0 +1,28 @@
+.products-section{
+    padding-top: 72px;
+
+    &__container{
+        @include center;
+        flex-direction: column;
+        gap: 55px;
+        width: 100%;
+        padding-bottom: 72px;
+        border-bottom: 1px solid #0000001A;
+    }
+
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    &__title{
+        @include text(48px, 700, 1.2);
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+.noline{
+    border-bottom: none;
+    padding-bottom: 80px;
+}

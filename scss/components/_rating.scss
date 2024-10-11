@@ -1,0 +1,22 @@
+.rating{
+    display: inline-flex;
+}
+
+.star {
+    font-size: 19px; 
+    cursor: pointer;
+    color: gray; 
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: var(--star-coolor); 
+}
+
+.star.selected {
+    color:var(--star-coolor); 
+}
+
+.rating-value{
+    @include text(14px,400, 1.35);
+}

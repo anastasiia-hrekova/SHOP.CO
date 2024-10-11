@@ -1,0 +1,9 @@
+.allview-btn{
+    width: 218px;
+    height: 52px;
+    background-color: transparent;
+    border: 1px solid #0000001A;
+    color: #000;
+    border-radius: 62px;
+    @include text(16px, 500, 1.36);
+}
