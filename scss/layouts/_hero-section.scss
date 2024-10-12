@@ -2,7 +2,7 @@
     background-image: url(../image/hero-image.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: bottom ;
     height: auto;
 
     &::after{
@@ -11,10 +11,11 @@
         background-image: url(../image/hero-star.svg);
         background-repeat: no-repeat;
         right: 45%;
-        top: 60%;
+        top: 40%;
         content: '';
         width: 56px;
         height: 56px;
+        z-index: 2;
     }
 
     &::before{
@@ -23,7 +24,7 @@
         background-image: url(../image/hero-star-big.svg);
         background-repeat: no-repeat;
         right: 6%;
-        top: 25%;
+        top: 20%;
         content: '';
         width: 104px;
         height: 104px;
