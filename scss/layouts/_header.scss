@@ -46,7 +46,7 @@ padding-bottom: 24px;
     border-radius: 62px;
     border: none;
     background-color: var(--bacground-color);
-    color: #00000066;
+    color: var(--text-color);
     padding-left: 48px;
     }
 
@@ -54,7 +54,7 @@ padding-bottom: 24px;
         width: 24px;
         height: 24px;
         position: absolute;
-        color: #00000066;
+        color:var(--text-color);
         transform: translate(20px, 15px);
         z-index: 2;
     }

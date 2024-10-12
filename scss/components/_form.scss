@@ -1,0 +1,38 @@
+.form{
+    @include center;
+    flex-direction: column;
+    gap: 14px;
+    width: 30%;
+
+    &__input{
+        width: 100%;
+        height: 48px;
+        border-radius: 62px;
+        background-color: #fff;
+        border: none;
+        color: var(--bacground-color);
+        padding-left: 52px;
+
+        &-icon{
+            position: absolute;
+            z-index: 2;
+            transform: translate(-150px, -31px);
+        }
+    }
+
+    &__btn{
+        width: 100%;
+        height: 48px;
+        border-radius: 62px;
+        background-color: #fff;
+        border: none;
+        color: #000;
+        @include text(16px, 500, 1.35);
+
+        &:hover{
+            background-color: #000;
+            border: 1px solid #fff;
+        color: #fff;
+        }
+    }
+}

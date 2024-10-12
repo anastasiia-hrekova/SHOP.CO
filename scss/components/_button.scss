@@ -6,4 +6,16 @@
     color: #000;
     border-radius: 62px;
     @include text(16px, 500, 1.36);
+
+    &:hover{
+        background-color: #000;
+    border: none;
+    color: #fff;
+    }
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }

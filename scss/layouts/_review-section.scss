@@ -1,5 +1,5 @@
 .review-section{
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 
     &__container{
         width: 100%;
@@ -36,10 +36,12 @@
         }
     }
 
-    &__reviews{
+    &__reviews,
+    .swiper-wrapper{
         @include center;
         flex-direction: row;
         gap: 20px;
+        padding-bottom: 50px;
     }
 
     &__star{
@@ -47,3 +49,9 @@
         color: var(--star-coolor); 
     }
 }
+
+.swiper{
+    width: 100%;
+      
+}
+

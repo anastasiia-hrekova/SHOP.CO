@@ -33,7 +33,7 @@
 
         &-old{
             @include text(24px, 700, 1.35); 
-            color: #00000066;
+            color: var(--text-color);
             text-decoration: line-through;  
         }
 
