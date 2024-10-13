@@ -4,6 +4,10 @@
     gap: 14px;
     width: 30%;
 
+    @media screen and (max-width: 880px) {
+        width: 80%;
+    }
+
     &__input{
         width: 100%;
         height: 48px;
@@ -13,10 +17,18 @@
         color: var(--bacground-color);
         padding-left: 52px;
 
+        @media screen and (max-width: 880px) {
+            padding-left: 45px;
+        }
+
         &-icon{
             position: absolute;
             z-index: 2;
             transform: translate(-150px, -31px);
+
+            @media screen and (max-width: 880px) {
+                transform: translate(-8rem, -31px);
+            }
         }
     }
 

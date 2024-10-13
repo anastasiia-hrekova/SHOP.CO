@@ -22,10 +22,19 @@ padding-bottom: 82px;
     border-radius: 20px;
     margin-top: -7%;
 
+    @media screen and (max-width: 880px) {
+        flex-direction: column;
+        gap: 32px;
+    }
+
     &-title{
         color: #fff;
         @include text(40px, 700, 1.2);
         width: 45%;
+        
+        @media screen and (max-width: 880px) {
+            width: 80%;
+        }
     }
 }
 

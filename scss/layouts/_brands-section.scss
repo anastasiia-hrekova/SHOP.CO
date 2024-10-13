@@ -3,12 +3,32 @@
     padding-bottom: 42px;
     background-color: #000;
 
+    @media screen and (max-width: 880px) {
+        padding-top: 39px;
+    padding-bottom: 39px;
+                }
+
     &__container{
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
         gap: 106px;
+
+        @media screen and (max-width: 880px) {
+            width: 100%;
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           gap: 34px;
+                    }
+
+        &-item{
+            @media screen and (max-width: 880px) {
+                display: flex;
+                justify-content: center;
+                         }
+        }
+
     }
 
 }

@@ -10,6 +10,7 @@
         background-color: var(--bacground-color);
         padding-top: 70px;
         padding-bottom: 76px;
+
     }
 
     &__title{
@@ -21,11 +22,21 @@
         @include center;
         flex-wrap: wrap;
         gap: 20px;
+
+        
+        @media screen and (max-width: 880px) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
     }
 
     &__item1{
         width: 35%;
         height: 289px;
+
+        @media screen and (max-width: 880px) {
+            width: 90%;
+        }
 
         &-title{
             position: absolute;
@@ -44,6 +55,10 @@
     &__item2{
         width: 55%;
         height: 289px;
+
+        @media screen and (max-width: 880px) {
+            width: 90%;
+        }
 
         &-title{
             position: absolute;

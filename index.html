@@ -25,7 +25,16 @@
     <header class="header">
         <div class="container">
             <nav class="header__block">
-                <a class="header__logo" href="#"><img src="./image/logo.svg" alt="Logo"></a>
+                 <!-- Hamburger Button -->
+        <div class="header__block-mobile">
+            <button class="header__block-hamburger">
+                <div class="header__block-hamburger-line"></div>
+                <div class="header__block-hamburger-line"></div>
+                <div class="header__block-hamburger-line"></div>
+              </button>
+    
+                    <a class="header__logo" href="#"><img src="./image/logo.svg" alt="Logo"></a>
+        </div>
 
                 <ul class="header__menu">
                     <li class="header__menu-item">
@@ -46,8 +55,9 @@
                 </div>
 
                 <div class="header__icons">
-                    <a href="#"><i class="fa-solid fa-cart-shopping header__icons-item"></i></a>
-                    <a href="#"><i class="fa-regular fa-circle-user header__icons-item"></i></a>
+                    <a class="header__icons-item header__icons-search" href="#"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i></a>
+                    <a class="header__icons-item" href="#"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i></a>
+                    <a class="header__icons-item" href="#"><i class="fa-regular fa-circle-user fa-xl" style="color: #000000;"></i></a>
                 </div>
             </nav>
         </div>
@@ -78,6 +88,8 @@
                             <p class="hero-section__features-text">Happy Customers</p>
                         </li>
                     </ul>
+
+                    <img class="hero-section__mobile" src="./image/hero-image-mobile.png" alt="poster">
                 </div>
             </div>
         </div>

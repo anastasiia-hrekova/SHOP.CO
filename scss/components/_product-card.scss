@@ -4,6 +4,17 @@
     align-items: left;
     gap: 16px;
 
+    @media screen and (max-width: 880px) {
+            
+    &:nth-child(3){
+        display: none;
+    }
+
+    &:last-child{
+        display: none;
+    }
+    }
+
     &__image{
         border-radius: 20px;
         width: 100%;
