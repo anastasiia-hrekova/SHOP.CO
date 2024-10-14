@@ -32,6 +32,11 @@
 
     &__title{
         @include text(20px, 700, 1.35);
+
+        @media screen and (max-width: 440px) {
+            @include text(16px, 700, 1.35);
+
+        }
     }
 
     &__rating{

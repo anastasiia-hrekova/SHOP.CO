@@ -40,6 +40,10 @@
             left: 6%;
             top: 45%;
         }        
+
+        @media screen and (max-width: 440px) {
+            display: none;
+        } 
     }
 
     &::before{
@@ -61,6 +65,10 @@
         @media screen and (max-width: 880px) {
         top: 35%;
         }
+
+        @media screen and (max-width: 440px) {
+            display: none;
+        } 
     }
 
 
