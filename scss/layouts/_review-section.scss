@@ -20,6 +20,11 @@
     &__title{
         @include text(48px, 700, 1.2);
         font-family: 'Poppins', sans-serif;
+
+        @media screen and (max-width: 880px) {
+            @include text(32px, 700, 1.2);
+    
+        }
     }
 
     &__icons{

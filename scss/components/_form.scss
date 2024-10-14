@@ -16,6 +16,7 @@
         border: none;
         color: var(--bacground-color);
         padding-left: 52px;
+        position: relative;
 
         @media screen and (max-width: 880px) {
             padding-left: 45px;
@@ -27,7 +28,11 @@
             transform: translate(-150px, -31px);
 
             @media screen and (max-width: 880px) {
-                transform: translate(-8rem, -31px);
+                transform: translate(-35vw, -31px);
+            }
+
+            @media screen and (max-width: 470px) {
+                transform: translate(-30vw, -31px);
             }
         }
     }

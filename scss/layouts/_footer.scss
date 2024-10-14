@@ -25,6 +25,8 @@ padding-bottom: 82px;
     @media screen and (max-width: 880px) {
         flex-direction: column;
         gap: 32px;
+    margin-top: -10%;
+
     }
 
     &-title{
@@ -34,6 +36,8 @@ padding-bottom: 82px;
         
         @media screen and (max-width: 880px) {
             width: 80%;
+      @include text(32px, 700, 1.2);
+
         }
     }
 }
@@ -45,6 +49,11 @@ align-items: center;
 justify-content: space-between;
 flex-direction: row;
 
+@media screen and (max-width: 880px) {
+flex-direction: column;  
+gap: 24px;
+}
+
 }
 
 &__block{
@@ -52,6 +61,12 @@ flex-direction: row;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin-right: 110px;
+
+    @media screen and (max-width: 880px) {
+        width: 100%;
+        margin-right: 0;
+        }
 
     &-logo{
         width: 167px;
@@ -82,11 +97,30 @@ flex-direction: row;
     }
 }
 
+&__navigation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media screen and (max-width: 880px) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 32px;
+        }
+
+}
+
 &__links{
     display: flex;
     flex-direction: column;
     gap: 26px;
     @include text(16px, 400, 1.2);
+
+    @media screen and (max-width: 880px) {
+        gap: 16px;
+        }
     
 
     &-title{
@@ -113,11 +147,20 @@ flex-direction: row;
     justify-content: space-between;
     border-top: 1px solid #0000001A;
     padding-top: 25px;
+
+    @media screen and (max-width: 880px) {
+        flex-direction: column;
+        gap: 16px;
+        }
     
 
     &-text{
         color: var(--text-color);
         @include text(14px, 400, 1.35);
+
+        @media screen and (max-width: 880px) {
+            text-align: center;    
+            }
     }
 
     &-payments{

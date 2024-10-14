@@ -14,7 +14,7 @@ padding-bottom: 24px;
         display: none;
     }
 
-    @media screen and (max-width: 880px) {
+    @media screen and (max-width: 1230px) {
         width: 100%;
     display: flex;
     align-items: center;
@@ -70,7 +70,7 @@ padding-bottom: 24px;
         background-color: transparent;
     }
 
-    @media screen and (max-width: 880px) {
+    @media screen and (max-width: 1230px) {
         display: none;
     }
 }
@@ -97,6 +97,9 @@ padding-bottom: 24px;
         color:var(--text-color);
         transform: translate(20px, 15px);
         z-index: 2;
+    }
+    @media screen and (max-width: 1230px) {
+        flex-grow: 1;
     }
 
     @media screen and (max-width: 880px) {

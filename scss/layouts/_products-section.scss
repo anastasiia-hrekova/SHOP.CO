@@ -1,32 +1,52 @@
-.products-section{
-    padding-top: 72px;
+.products-section {
+  padding-top: 72px;
 
-    &__container{
-        @include center;
-        flex-direction: column;
-        gap: 55px;
-        width: 100%;
-        padding-bottom: 72px;
-        border-bottom: 1px solid #0000001A;
-    }
-
-    &__cards{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-
-        @media screen and (max-width: 880px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    &__title{
-        @include text(48px, 700, 1.2);
-        font-family: 'Poppins', sans-serif;
-    }
+  @media screen and (max-width: 880px) {
+    padding-top: 40px;
 }
 
-.noline{
-    border-bottom: none;
-    padding-bottom: 80px;
+  &__container {
+    @include center;
+    flex-direction: column;
+    gap: 55px;
+    width: 100%;
+    padding-bottom: 72px;
+    border-bottom: 1px solid #0000001a;
+
+    @media screen and (max-width: 880px) {
+      padding-bottom: 40px;
+      gap: 32px;
+  }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @media screen and (max-width: 880px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  }
+
+  &__title {
+    @include text(48px, 700, 1.2);
+    font-family: "Poppins", sans-serif;
+
+    @media screen and (max-width: 880px) {
+        @include text(32px, 700, 1.2);
+
+    }
+  }
+}
+
+.noline {
+  border-bottom: none;
+  padding-bottom: 80px;
+
+  @media screen and (max-width: 880px) {
+    padding-bottom: 50px;
+}
+
 }

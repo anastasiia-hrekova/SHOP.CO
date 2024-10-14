@@ -31,6 +31,11 @@
         height: 56px;
         z-index: 2;
 
+        @media screen and (max-width: 1230px) {
+            left: 50%;
+            top: 30%;
+        }
+
         @media screen and (max-width: 880px) {
             left: 6%;
             top: 45%;
@@ -47,6 +52,11 @@
         content: '';
         width: 104px;
         height: 104px;
+
+        @media screen and (max-width: 1230px) {
+            right: 0;
+        top: 10%;
+        }
 
         @media screen and (max-width: 880px) {
         top: 35%;
