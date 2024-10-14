@@ -16,8 +16,14 @@ let swiper = new Swiper(".mySwiper", {
 
         }},
 
+        navigation: {
+          nextEl: ".next",
+          prevEl: ".prev",
+        },
+
     pagination: {
       el: ".swiper-pagination",
+      dynamicBullets: true,
     },
     mousewheel: true,
     keyboard: true,
