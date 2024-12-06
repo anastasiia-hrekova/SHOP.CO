@@ -1,529 +1,770 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHOP.CO</title>
 
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Poppins:wght@100;400;500;700&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-        <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Poppins:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
 
-</head>
+    <script src="./js/mobile-menu.js" defer></script>
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
     <header class="header">
-        <div class="container">
-            <nav class="header__block">
-                 <!-- Hamburger Button -->
-        <div class="header__block-mobile">
-            <button class="header__block-hamburger">
-                <div class="header__block-hamburger-line"></div>
-                <div class="header__block-hamburger-line"></div>
-                <div class="header__block-hamburger-line"></div>
+      <div class="container">
+        <nav class="header__block">
+          <div class="header__block-mobile">
+            <!-- Hamburger Button -->
+            <button class="header__block-hamburger menu-btn-open">
+              <div class="header__block-hamburger-line"></div>
+              <div class="header__block-hamburger-line"></div>
+              <div class="header__block-hamburger-line"></div>
+            </button>
+
+            <div class="mobile-menu">
+              <button
+                class="mobile-menu__btn-close menu-btn-close"
+                type="button"
+              >
+                <i
+                  class="fa-solid fa-x fa-lg button-close__img menu-btn-close"
+                  style="color: #000000"
+                ></i>
               </button>
-    
-                    <a class="header__logo" href="#"><img src="./image/logo.svg" alt="Logo"></a>
-        </div>
 
-                <ul class="header__menu">
-                    <li class="header__menu-item">
-                        <a href="#">
-                            <select name="category" class="header__menu-select">
-                                <option value="Shop">Shop</option>
-                            </select>
-                        </a>
-                    </li>
-                    <li class="header__menu-item"><a href="#">On Sale</a></li>
-                    <li class="header__menu-item"><a href="#">New Arrivals</a></li>
-                    <li class="header__menu-item"><a href="#">Brands</a></li>
+              <nav class="mobile-menu__nav">
+                <ul>
+                  <li class="mobile-menu__list">
+                    <a class="header__logo" href="#"
+                      ><img src="./image/logo.svg" alt="Logo"
+                    /></a>
+                  </li>
+                  <li class="mobile-menu__list">
+                    <a href="#">On Sale</a>
+                  </li>
+                  <li class="mobile-menu__list">
+                    <a href="#">New Arrivals</a>
+                  </li>
+                  <li class="mobile-menu__list">
+                    <a href="#">Brands</a>
+                  </li>
                 </ul>
+              </nav>
+            </div>
 
-                <div class="header__search">
-                    <i class="fa-solid fa-magnifying-glass header__search-icon"></i>
-                    <input class="header__search-input" type="text" placeholder="Search for products..">
-                </div>
+            <a class="header__logo" href="#"
+              ><img src="./image/logo.svg" alt="Logo"
+            /></a>
+          </div>
 
-                <div class="header__icons">
-                    <a class="header__icons-item header__icons-search" href="#"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i></a>
-                    <a class="header__icons-item" href="#"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i></a>
-                    <a class="header__icons-item" href="#"><i class="fa-regular fa-circle-user fa-xl" style="color: #000000;"></i></a>
-                </div>
-            </nav>
-        </div>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#">
+                <select name="category" class="header__menu-select">
+                  <option value="Shop">Shop</option>
+                </select>
+              </a>
+            </li>
+            <li class="header__menu-item"><a href="#">On Sale</a></li>
+            <li class="header__menu-item"><a href="#">New Arrivals</a></li>
+            <li class="header__menu-item"><a href="#">Brands</a></li>
+          </ul>
+
+          <div class="header__search">
+            <i class="fa-solid fa-magnifying-glass header__search-icon"></i>
+            <input
+              class="header__search-input"
+              type="text"
+              placeholder="Search for products.."
+            />
+          </div>
+
+          <div class="header__icons">
+            <a class="header__icons-item header__icons-search" href="#"
+              ><i
+                class="fa-solid fa-magnifying-glass fa-xl"
+                style="color: #000000"
+              ></i
+            ></a>
+            <a class="header__icons-item" href="#"
+              ><i
+                class="fa-solid fa-cart-shopping fa-xl"
+                style="color: #000000"
+              ></i
+            ></a>
+            <a class="header__icons-item" href="#"
+              ><i
+                class="fa-regular fa-circle-user fa-xl"
+                style="color: #000000"
+              ></i
+            ></a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <div class="hero-section">
+        <div class="container">
+          <div class="hero-section__container">
+            <h1 class="hero-section__title">
+              FIND CLOTHES THAT MATCHES YOUR STYLE
+            </h1>
+            <p class="hero-section__text">
+              Browse through our diverse range of meticulously crafted garments,
+              designed to bring out your individuality and cater to your sense
+              of style.
+            </p>
+            <button class="hero-section__btn button" type="button">
+              Shop Now
+            </button>
 
-        <div class="hero-section">
-            <div class="container">
-                <div class="hero-section__container">
-                    <h1 class="hero-section__title">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-                    <p class="hero-section__text">Browse through our diverse range of meticulously crafted garments,
-                        designed to bring out your
-                        individuality and cater to your sense of style.</p>
-                    <button class="hero-section__btn button" type="button">Shop Now</button>
+            <ul class="hero-section__features">
+              <li class="hero-section__features-item">
+                <h3 class="hero-section__features-title">200+</h3>
+                <p class="hero-section__features-text">International Brands</p>
+              </li>
+              <li class="hero-section__features-item">
+                <h3 class="hero-section__features-title">2,000+</h3>
+                <p class="hero-section__features-text">High-Quality Products</p>
+              </li>
+              <li class="hero-section__features-item">
+                <h3 class="hero-section__features-title">30,000+</h3>
+                <p class="hero-section__features-text">Happy Customers</p>
+              </li>
+            </ul>
 
-                    <ul class="hero-section__features">
-                        <li class="hero-section__features-item">
-                            <h3 class="hero-section__features-title">200+</h3>
-                            <p class="hero-section__features-text">International Brands</p>
-                        </li>
-                        <li class="hero-section__features-item">
-                            <h3 class="hero-section__features-title">2,000+</h3>
-                            <p class="hero-section__features-text">High-Quality Products</p>
-                        </li>
-                        <li class="hero-section__features-item">
-                            <h3 class="hero-section__features-title">30,000+</h3>
-                            <p class="hero-section__features-text">Happy Customers</p>
-                        </li>
-                    </ul>
+            <img
+              class="hero-section__mobile"
+              src="./image/hero-image-mobile.png"
+              alt="poster"
+            />
+          </div>
+        </div>
+      </div>
 
-                    <img class="hero-section__mobile" src="./image/hero-image-mobile.png" alt="poster">
+      <div class="brands-section">
+        <div class="container">
+          <ul class="brands-section__container">
+            <li class="brands-section__container-item">
+              <img src="./image/versace.png" alt="versace" />
+            </li>
+            <li class="brands-section__container-item">
+              <img src="./image/zara.png" alt="zara" />
+            </li>
+            <li class="brands-section__container-item">
+              <img src="./image/gucci.png" alt="gucci" />
+            </li>
+            <li class="brands-section__container-item">
+              <img src="./image/prada.png" alt="prada" />
+            </li>
+            <li class="brands-section__container-item">
+              <img src="./image/calvin-klein.png" alt="calvin-klein" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="products-section">
+        <div class="container">
+          <div class="products-section__container">
+            <h2 class="products-section__title">NEW ARRIVALS</h2>
+
+            <ul class="products-section__cards">
+              <li class="product-card">
+                <a href="#"
+                  ><img
+                    class="product-card__image"
+                    src="./image/card1.png"
+                    alt="photo"
+                /></a>
+                <h4 class="product-card__title">T-shirt with Tape Details</h4>
+                <div class="product-card__rating">
+                  <div class="rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                  </div>
+                  <div class="rating-value">
+                    <span id="rating-output">0</span>/5
+                  </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="brands-section">
-            <div class="container">
-                <ul class="brands-section__container">
-                    <li class="brands-section__container-item"><img src="./image/versace.png" alt="versace"></li>
-                    <li class="brands-section__container-item"><img src="./image/zara.png" alt="zara"></li>
-                    <li class="brands-section__container-item"><img src="./image/gucci.png" alt="gucci"></li>
-                    <li class="brands-section__container-item"><img src="./image/prada.png" alt="prada"></li>
-                    <li class="brands-section__container-item"><img src="./image/calvin-klein.png" alt="calvin-klein">
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="products-section">
-            <div class="container">
-                <div class="products-section__container">
-                    <h2 class="products-section__title">NEW ARRIVALS</h2>
-
-                    <ul class="products-section__cards">
-                        <li class="product-card">
-                            <a href="#"><img class="product-card__image" src="./image/card1.png" alt="photo"></a>
-                            <h4 class="product-card__title">T-shirt with Tape Details</h4>
-                            <div class="product-card__rating">
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
-                                </div>
-                                <div class="rating-value"><span id="rating-output">0</span>/5</div>
-                            </div>
-                            <div class="product-card__prices">
-                                <h3 class="product-card__prices-new">$120</h3>
-                            </div>
-                        </li>
-                        <li class="product-card">
-                            <a href="#"><img class="product-card__image" src="./image/card2.png" alt="photo"></a>
-                            <h4 class="product-card__title">Skinny Fit Jeans</h4>
-                            <div class="product-card__rating">
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
-                                </div>
-                                <div class="rating-value"><span id="rating-output">0</span>/5</div>
-                            </div>
-                            <div class="product-card__prices">
-                                <h3 class="product-card__prices-new">$240 <span
-                                        class="product-card__prices-old">$260</span></h3>
-                                <div class="product-card__prices-sale">-20%</div>
-                            </div>
-                        </li>
-                        <li class="product-card">
-                            <a href="#"><img class="product-card__image" src="./image/card3.png" alt="photo"></a>
-                            <h4 class="product-card__title">Checkered Shirt</h4>
-                            <div class="product-card__rating">
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
-                                </div>
-                                <div class="rating-value"><span id="rating-output">0</span>/5</div>
-                            </div>
-                            <div class="product-card__prices">
-                                <h3 class="product-card__prices-new">$180</h3>
-                            </div>
-                        </li>
-                        <li class="product-card">
-                            <a href="#"><img class="product-card__image" src="./image/card4.png" alt="photo"></a>
-                            <h4 class="product-card__title">Sleeve Striped T-shirt</h4>
-                            <div class="product-card__rating">
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
-                                </div>
-                                <div class="rating-value"><span id="rating-output">0</span>/5</div>
-                            </div>
-                            <div class="product-card__prices">
-                                <h3 class="product-card__prices-new">$130 <span
-                                        class="product-card__prices-old">$160</span></h3>
-                                <div class="product-card__prices-sale">-30%</div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <button class="allview-btn" type="button">View All</button>
+                <div class="product-card__prices">
+                  <h3 class="product-card__prices-new">$120</h3>
                 </div>
-            </div>
-        </div>
-
-        <div class="products-section">
-            <div class="container">
-                <div class="products-section__container noline">
-                    <h2 class="products-section__title">TOP SELLING</h2>
-
-                    <ul class="products-section__cards">
-                        <li class="product-card">
-                            <a href="#"><img class="product-card__image" src="./image/card5.png" alt="photo"></a>
-                            <h4 class="product-card__title">Vertical Striped Shirt</h4>
-                            <div class="product-card__rating">
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
-                                </div>
-                                <div class="rating-value"><span id="rating-output">0</span>/5</div>
-                            </div>
-                            <div class="product-card__prices">
-                                <h3 class="product-card__prices-new">$212 <span
-                                        class="product-card__prices-old">$232</span></h3>
-                                <div class="product-card__prices-sale">-20%</div>
-                            </div>
-                        </li>
-                        <li class="product-card">
-                            <a href="#"><img class="product-card__image" src="./image/card6.png" alt="photo"></a>
-                            <h4 class="product-card__title">Courage Graphic T-shirt</h4>
-                            <div class="product-card__rating">
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
-                                </div>
-                                <div class="rating-value"><span id="rating-output">0</span>/5</div>
-                            </div>
-                            <div class="product-card__prices">
-                                <h3 class="product-card__prices-new">$145</h3>
-                            </div>
-                        </li>
-                        <li class="product-card">
-                            <a href="#"><img class="product-card__image" src="./image/card7.png" alt="photo"></a>
-                            <h4 class="product-card__title">Loose Fit Bermuda Shorts</h4>
-                            <div class="product-card__rating">
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
-                                </div>
-                                <div class="rating-value"><span id="rating-output">0</span>/5</div>
-                            </div>
-                            <div class="product-card__prices">
-                                <h3 class="product-card__prices-new">$80</h3>
-                            </div>
-                        </li>
-                        <li class="product-card">
-                            <a href="#"><img class="product-card__image" src="./image/card8.png" alt="photo"></a>
-                            <h4 class="product-card__title">Faded Skinny Jeans</h4>
-                            <div class="product-card__rating">
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
-                                </div>
-                                <div class="rating-value"><span id="rating-output">0</span>/5</div>
-                            </div>
-                            <div class="product-card__prices">
-                                <h3 class="product-card__prices-new">$130</h3>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <button class="allview-btn" type="button">View All</button>
+              </li>
+              <li class="product-card">
+                <a href="#"
+                  ><img
+                    class="product-card__image"
+                    src="./image/card2.png"
+                    alt="photo"
+                /></a>
+                <h4 class="product-card__title">Skinny Fit Jeans</h4>
+                <div class="product-card__rating">
+                  <div class="rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                  </div>
+                  <div class="rating-value">
+                    <span id="rating-output">0</span>/5
+                  </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="browse-section">
-            <div class="container">
-                <div class="browse-section__container">
-                    <h2 class="browse-section__title">BROWSE BY DRESS STYLE</h2>
-
-                    <ul class="browse-section__block">
-                        <li class="browse-section__item1">
-                            <h3 class="browse-section__item1-title">Casual</h3>
-                            <a href="#"><img class="browse-section__item1-img" src="./image/casual.png"
-                                    alt="casual"></a>
-                        </li>
-                        <li class="browse-section__item2">
-                            <h3 class="browse-section__item2-title">Formal</h3>
-                            <a href="#"><img class="browse-section__item2-img" src="./image/formal.png"
-                                    alt="formal"></a>
-                        </li>
-                        <li class="browse-section__item2">
-                            <h3 class="browse-section__item2-title">Party</h3>
-                            <a href="#"><img class="browse-section__item2-img" src="./image/party.png" alt="party"></a>
-                        </li>
-                        <li class="browse-section__item1">
-                            <h3 class="browse-section__item1-title">Gym</h3>
-                            <a href="#"><img class="browse-section__item1-img" src="./image/gym.png" alt="gym"></a>
-                        </li>
-                    </ul>
+                <div class="product-card__prices">
+                  <h3 class="product-card__prices-new">
+                    $240 <span class="product-card__prices-old">$260</span>
+                  </h3>
+                  <div class="product-card__prices-sale">-20%</div>
                 </div>
-            </div>
-        </div>
-
-        <div class="review-section">
-            <div class="container">
-                <div class="review-section__container">
-                    <div class="review-section__name">
-                        <h2 class="review-section__title">OUR HAPPY CUSTOMERS</h2>
-                        <div class="review-section__icons">
-                        <button class="swiper-button prev" type="button"><i class="fa-solid fa-arrow-left review-section__icons-arrow"></i></button>
-                        <button class="swiper-button next" type="button"><i class="fa-solid fa-arrow-right review-section__icons-arrow"></i></button>
-                        </div>
-                    </div>
-
-                    <div class="swiper mySwiper">
-                        <ul class="review-section__reviews swiper-wrapper">
-                            <li class="review-card swiper-slide">
-                                <div class="rating">
-                                    <span class="review-section__star" data-value="1">★</span>
-                                    <span class="review-section__star" data-value="2">★</span>
-                                    <span class="review-section__star" data-value="3">★</span>
-                                    <span class="review-section__star" data-value="4">★</span>
-                                    <span class="review-section__star" data-value="5">★</span>
-                                </div>
-                                <div class="review-card__check">
-                                    <h3 class="review-card__name">Sarah M.</h3>
-                                    <i class="fa-solid fa-circle-check fa-sm" style="color: #01ab31;"></i>
-                                </div>
-                                <p class="review-card__text">"I'm blown away by the quality and style of the clothes I
-                                    received from Shop.co. From casual
-                                    wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                            </li>
-                            <li class="review-card swiper-slide">
-                                <div class="rating">
-                                    <span class="review-section__star" data-value="1">★</span>
-                                    <span class="review-section__star" data-value="2">★</span>
-                                    <span class="review-section__star" data-value="3">★</span>
-                                    <span class="review-section__star" data-value="4">★</span>
-                                    <span class="review-section__star" data-value="5">★</span>
-                                </div>
-                                <div class="review-card__check">
-                                    <h3 class="review-card__name">Alex K.</h3>
-                                    <i class="fa-solid fa-circle-check fa-sm" style="color: #01ab31;"></i>
-                                </div>
-                                <p class="review-card__text">"Finding clothes that align with my personal style used to
-                                    be a challenge until I discovered
-                                    Shop.co. The range of options they offer is truly remarkable, catering to a variety
-                                    of
-                                    tastes and occasions.”</p>
-                            </li>
-                            <li class="review-card swiper-slide">
-                                <div class="rating">
-                                    <span class="review-section__star" data-value="1">★</span>
-                                    <span class="review-section__star" data-value="2">★</span>
-                                    <span class="review-section__star" data-value="3">★</span>
-                                    <span class="review-section__star" data-value="4">★</span>
-                                    <span class="review-section__star" data-value="5">★</span>
-                                </div>
-                                <div class="review-card__check">
-                                    <h3 class="review-card__name">James L.</h3>
-                                    <i class="fa-solid fa-circle-check fa-sm" style="color: #01ab31;"></i>
-                                </div>
-                                <p class="review-card__text">"As someone who's always on the lookout for unique fashion
-                                    pieces, I'm thrilled to have
-                                    stumbled upon Shop.co. The selection of clothes is not only diverse but also
-                                    on-point with
-                                    the latest trends.”</p>
-                            </li>
-                            <li class="review-card swiper-slide">
-                                <div class="rating">
-                                    <span class="review-section__star" data-value="1">★</span>
-                                    <span class="review-section__star" data-value="2">★</span>
-                                    <span class="review-section__star" data-value="3">★</span>
-                                    <span class="review-section__star" data-value="4">★</span>
-                                    <span class="review-section__star" data-value="5">★</span>
-                                </div>
-                                <div class="review-card__check">
-                                    <h3 class="review-card__name">Sarah M.</h3>
-                                    <i class="fa-solid fa-circle-check fa-sm" style="color: #01ab31;"></i>
-                                </div>
-                                <p class="review-card__text">"I'm blown away by the quality and style of the clothes I
-                                    received from Shop.co. From casual
-                                    wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                            </li>
-                            <li class="review-card swiper-slide">
-                                <div class="rating">
-                                    <span class="review-section__star" data-value="1">★</span>
-                                    <span class="review-section__star" data-value="2">★</span>
-                                    <span class="review-section__star" data-value="3">★</span>
-                                    <span class="review-section__star" data-value="4">★</span>
-                                    <span class="review-section__star" data-value="5">★</span>
-                                </div>
-                                <div class="review-card__check">
-                                    <h3 class="review-card__name">Alex K.</h3>
-                                    <i class="fa-solid fa-circle-check fa-sm" style="color: #01ab31;"></i>
-                                </div>
-                                <p class="review-card__text">"Finding clothes that align with my personal style used to
-                                    be a challenge until I discovered
-                                    Shop.co. The range of options they offer is truly remarkable, catering to a variety
-                                    of
-                                    tastes and occasions.”</p>
-                            </li>
-                            <li class="review-card swiper-slide">
-                                <div class="rating">
-                                    <span class="review-section__star" data-value="1">★</span>
-                                    <span class="review-section__star" data-value="2">★</span>
-                                    <span class="review-section__star" data-value="3">★</span>
-                                    <span class="review-section__star" data-value="4">★</span>
-                                    <span class="review-section__star" data-value="5">★</span>
-                                </div>
-                                <div class="review-card__check">
-                                    <h3 class="review-card__name">James L.</h3>
-                                    <i class="fa-solid fa-circle-check fa-sm" style="color: #01ab31;"></i>
-                                </div>
-                                <p class="review-card__text">"As someone who's always on the lookout for unique fashion
-                                    pieces, I'm thrilled to have
-                                    stumbled upon Shop.co. The selection of clothes is not only diverse but also
-                                    on-point with
-                                    the latest trends.”</p>
-                            </li>
-                        </ul>
-                        <div class="swiper-pagination"></div>
-                    </div>
-
+              </li>
+              <li class="product-card">
+                <a href="#"
+                  ><img
+                    class="product-card__image"
+                    src="./image/card3.png"
+                    alt="photo"
+                /></a>
+                <h4 class="product-card__title">Checkered Shirt</h4>
+                <div class="product-card__rating">
+                  <div class="rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                  </div>
+                  <div class="rating-value">
+                    <span id="rating-output">0</span>/5
+                  </div>
                 </div>
-            </div>
-        </div>
+                <div class="product-card__prices">
+                  <h3 class="product-card__prices-new">$180</h3>
+                </div>
+              </li>
+              <li class="product-card">
+                <a href="#"
+                  ><img
+                    class="product-card__image"
+                    src="./image/card4.png"
+                    alt="photo"
+                /></a>
+                <h4 class="product-card__title">Sleeve Striped T-shirt</h4>
+                <div class="product-card__rating">
+                  <div class="rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                  </div>
+                  <div class="rating-value">
+                    <span id="rating-output">0</span>/5
+                  </div>
+                </div>
+                <div class="product-card__prices">
+                  <h3 class="product-card__prices-new">
+                    $130 <span class="product-card__prices-old">$160</span>
+                  </h3>
+                  <div class="product-card__prices-sale">-30%</div>
+                </div>
+              </li>
+            </ul>
 
+            <button class="allview-btn" type="button">View All</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="products-section">
+        <div class="container">
+          <div class="products-section__container noline">
+            <h2 class="products-section__title">TOP SELLING</h2>
+
+            <ul class="products-section__cards">
+              <li class="product-card">
+                <a href="#"
+                  ><img
+                    class="product-card__image"
+                    src="./image/card5.png"
+                    alt="photo"
+                /></a>
+                <h4 class="product-card__title">Vertical Striped Shirt</h4>
+                <div class="product-card__rating">
+                  <div class="rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                  </div>
+                  <div class="rating-value">
+                    <span id="rating-output">0</span>/5
+                  </div>
+                </div>
+                <div class="product-card__prices">
+                  <h3 class="product-card__prices-new">
+                    $212 <span class="product-card__prices-old">$232</span>
+                  </h3>
+                  <div class="product-card__prices-sale">-20%</div>
+                </div>
+              </li>
+              <li class="product-card">
+                <a href="#"
+                  ><img
+                    class="product-card__image"
+                    src="./image/card6.png"
+                    alt="photo"
+                /></a>
+                <h4 class="product-card__title">Courage Graphic T-shirt</h4>
+                <div class="product-card__rating">
+                  <div class="rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                  </div>
+                  <div class="rating-value">
+                    <span id="rating-output">0</span>/5
+                  </div>
+                </div>
+                <div class="product-card__prices">
+                  <h3 class="product-card__prices-new">$145</h3>
+                </div>
+              </li>
+              <li class="product-card">
+                <a href="#"
+                  ><img
+                    class="product-card__image"
+                    src="./image/card7.png"
+                    alt="photo"
+                /></a>
+                <h4 class="product-card__title">Loose Fit Bermuda Shorts</h4>
+                <div class="product-card__rating">
+                  <div class="rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                  </div>
+                  <div class="rating-value">
+                    <span id="rating-output">0</span>/5
+                  </div>
+                </div>
+                <div class="product-card__prices">
+                  <h3 class="product-card__prices-new">$80</h3>
+                </div>
+              </li>
+              <li class="product-card">
+                <a href="#"
+                  ><img
+                    class="product-card__image"
+                    src="./image/card8.png"
+                    alt="photo"
+                /></a>
+                <h4 class="product-card__title">Faded Skinny Jeans</h4>
+                <div class="product-card__rating">
+                  <div class="rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                  </div>
+                  <div class="rating-value">
+                    <span id="rating-output">0</span>/5
+                  </div>
+                </div>
+                <div class="product-card__prices">
+                  <h3 class="product-card__prices-new">$130</h3>
+                </div>
+              </li>
+            </ul>
+
+            <button class="allview-btn" type="button">View All</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="browse-section">
+        <div class="container">
+          <div class="browse-section__container">
+            <h2 class="browse-section__title">BROWSE BY DRESS STYLE</h2>
+
+            <ul class="browse-section__block">
+              <li class="browse-section__item1">
+                <h3 class="browse-section__item1-title">Casual</h3>
+                <a href="#"
+                  ><img
+                    class="browse-section__item1-img"
+                    src="./image/casual.png"
+                    alt="casual"
+                /></a>
+              </li>
+              <li class="browse-section__item2">
+                <h3 class="browse-section__item2-title">Formal</h3>
+                <a href="#"
+                  ><img
+                    class="browse-section__item2-img"
+                    src="./image/formal.png"
+                    alt="formal"
+                /></a>
+              </li>
+              <li class="browse-section__item2">
+                <h3 class="browse-section__item2-title">Party</h3>
+                <a href="#"
+                  ><img
+                    class="browse-section__item2-img"
+                    src="./image/party.png"
+                    alt="party"
+                /></a>
+              </li>
+              <li class="browse-section__item1">
+                <h3 class="browse-section__item1-title">Gym</h3>
+                <a href="#"
+                  ><img
+                    class="browse-section__item1-img"
+                    src="./image/gym.png"
+                    alt="gym"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-section">
+        <div class="container">
+          <div class="review-section__container">
+            <div class="review-section__name">
+              <h2 class="review-section__title">OUR HAPPY CUSTOMERS</h2>
+              <div class="review-section__icons">
+                <button class="swiper-button prev" type="button">
+                  <i
+                    class="fa-solid fa-arrow-left review-section__icons-arrow"
+                  ></i>
+                </button>
+                <button class="swiper-button next" type="button">
+                  <i
+                    class="fa-solid fa-arrow-right review-section__icons-arrow"
+                  ></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper mySwiper">
+              <ul class="review-section__reviews swiper-wrapper">
+                <li class="review-card swiper-slide">
+                  <div class="rating">
+                    <span class="review-section__star" data-value="1">★</span>
+                    <span class="review-section__star" data-value="2">★</span>
+                    <span class="review-section__star" data-value="3">★</span>
+                    <span class="review-section__star" data-value="4">★</span>
+                    <span class="review-section__star" data-value="5">★</span>
+                  </div>
+                  <div class="review-card__check">
+                    <h3 class="review-card__name">Sarah M.</h3>
+                    <i
+                      class="fa-solid fa-circle-check fa-sm"
+                      style="color: #01ab31"
+                    ></i>
+                  </div>
+                  <p class="review-card__text">
+                    "I'm blown away by the quality and style of the clothes I
+                    received from Shop.co. From casual wear to elegant dresses,
+                    every piece I've bought has exceeded my expectations.”
+                  </p>
+                </li>
+                <li class="review-card swiper-slide">
+                  <div class="rating">
+                    <span class="review-section__star" data-value="1">★</span>
+                    <span class="review-section__star" data-value="2">★</span>
+                    <span class="review-section__star" data-value="3">★</span>
+                    <span class="review-section__star" data-value="4">★</span>
+                    <span class="review-section__star" data-value="5">★</span>
+                  </div>
+                  <div class="review-card__check">
+                    <h3 class="review-card__name">Alex K.</h3>
+                    <i
+                      class="fa-solid fa-circle-check fa-sm"
+                      style="color: #01ab31"
+                    ></i>
+                  </div>
+                  <p class="review-card__text">
+                    "Finding clothes that align with my personal style used to
+                    be a challenge until I discovered Shop.co. The range of
+                    options they offer is truly remarkable, catering to a
+                    variety of tastes and occasions.”
+                  </p>
+                </li>
+                <li class="review-card swiper-slide">
+                  <div class="rating">
+                    <span class="review-section__star" data-value="1">★</span>
+                    <span class="review-section__star" data-value="2">★</span>
+                    <span class="review-section__star" data-value="3">★</span>
+                    <span class="review-section__star" data-value="4">★</span>
+                    <span class="review-section__star" data-value="5">★</span>
+                  </div>
+                  <div class="review-card__check">
+                    <h3 class="review-card__name">James L.</h3>
+                    <i
+                      class="fa-solid fa-circle-check fa-sm"
+                      style="color: #01ab31"
+                    ></i>
+                  </div>
+                  <p class="review-card__text">
+                    "As someone who's always on the lookout for unique fashion
+                    pieces, I'm thrilled to have stumbled upon Shop.co. The
+                    selection of clothes is not only diverse but also on-point
+                    with the latest trends.”
+                  </p>
+                </li>
+                <li class="review-card swiper-slide">
+                  <div class="rating">
+                    <span class="review-section__star" data-value="1">★</span>
+                    <span class="review-section__star" data-value="2">★</span>
+                    <span class="review-section__star" data-value="3">★</span>
+                    <span class="review-section__star" data-value="4">★</span>
+                    <span class="review-section__star" data-value="5">★</span>
+                  </div>
+                  <div class="review-card__check">
+                    <h3 class="review-card__name">Sarah M.</h3>
+                    <i
+                      class="fa-solid fa-circle-check fa-sm"
+                      style="color: #01ab31"
+                    ></i>
+                  </div>
+                  <p class="review-card__text">
+                    "I'm blown away by the quality and style of the clothes I
+                    received from Shop.co. From casual wear to elegant dresses,
+                    every piece I've bought has exceeded my expectations.”
+                  </p>
+                </li>
+                <li class="review-card swiper-slide">
+                  <div class="rating">
+                    <span class="review-section__star" data-value="1">★</span>
+                    <span class="review-section__star" data-value="2">★</span>
+                    <span class="review-section__star" data-value="3">★</span>
+                    <span class="review-section__star" data-value="4">★</span>
+                    <span class="review-section__star" data-value="5">★</span>
+                  </div>
+                  <div class="review-card__check">
+                    <h3 class="review-card__name">Alex K.</h3>
+                    <i
+                      class="fa-solid fa-circle-check fa-sm"
+                      style="color: #01ab31"
+                    ></i>
+                  </div>
+                  <p class="review-card__text">
+                    "Finding clothes that align with my personal style used to
+                    be a challenge until I discovered Shop.co. The range of
+                    options they offer is truly remarkable, catering to a
+                    variety of tastes and occasions.”
+                  </p>
+                </li>
+                <li class="review-card swiper-slide">
+                  <div class="rating">
+                    <span class="review-section__star" data-value="1">★</span>
+                    <span class="review-section__star" data-value="2">★</span>
+                    <span class="review-section__star" data-value="3">★</span>
+                    <span class="review-section__star" data-value="4">★</span>
+                    <span class="review-section__star" data-value="5">★</span>
+                  </div>
+                  <div class="review-card__check">
+                    <h3 class="review-card__name">James L.</h3>
+                    <i
+                      class="fa-solid fa-circle-check fa-sm"
+                      style="color: #01ab31"
+                    ></i>
+                  </div>
+                  <p class="review-card__text">
+                    "As someone who's always on the lookout for unique fashion
+                    pieces, I'm thrilled to have stumbled upon Shop.co. The
+                    selection of clothes is not only diverse but also on-point
+                    with the latest trends.”
+                  </p>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__form">
+            <h2 class="footer__form-title">
+              STAY UPTO DATE ABOUT OUR LATEST OFFERS
+            </h2>
+            <form class="form">
+              <i
+                class="fa-regular fa-envelope fa-lg form__input-icon"
+                style="color: #636363"
+              ></i>
+              <input
+                class="form__input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Enter your email address"
+              />
+              <button class="form__btn" type="button">
+                Subscribe to Newsletter
+              </button>
+            </form>
+          </div>
 
-        <div class="container">
-            <div class="footer__container">
-                <div class="footer__form">
-                    <h2 class="footer__form-title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
-                    <form class="form">
-                        <i class="fa-regular fa-envelope fa-lg form__input-icon" style="color: #636363;"></i>
-                        <input class="form__input" type="email" name="user-email" id="user-email"
-                            placeholder="Enter your email address">
-                        <button class="form__btn" type="button">Subscribe to Newsletter</button>
-                    </form>
-                </div>
+          <div class="footer__nav">
+            <div class="footer__block">
+              <img
+                class="footer__block-logo"
+                src="./image/logo.svg"
+                alt="logo"
+              />
+              <p class="footer__block-text">
+                We have clothes that suits your style and which you’re proud to
+                wear. From women to men.
+              </p>
 
-                <div class="footer__nav">
-                    <div class="footer__block">
-                        <img class="footer__block-logo" src="./image/logo.svg" alt="logo">
-                        <p class="footer__block-text">We have clothes that suits your style and which you’re proud to
-                            wear. From women to men.</p>
-
-                        <ul class="footer__block-icons">
-                            <li class="footer__block-icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li class="footer__block-icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li class="footer__block-icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li class="footer__block-icon"><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__navigation">
-                        <div class="footer__links">
-                            <h4 class="footer__links-title">COMPANY</h4>
-                            <ul class="footer__links-list">
-                                <li><a class="footer__links-item" href="#">About</a></li>
-                                <li><a class="footer__links-item" href="#">Features</a></li>
-                                <li><a class="footer__links-item" href="#">Works</a></li>
-                                <li><a class="footer__links-item" href="#">Career</a></li>
-                            </ul>
-                        </div> 
-    
-                        <div class="footer__links">
-                            <h4 class="footer__links-title">HELP</h4>
-                            <ul class="footer__links-list">
-                                <li><a class="footer__links-item" href="#">Customar Support</a></li>
-                                <li><a class="footer__links-item" href="#">Delivery Details</a></li>
-                                <li><a class="footer__links-item" href="#">Terms & Conditions</a></li>
-                                <li><a class="footer__links-item" href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-    
-                        <div class="footer__links">
-                            <h4 class="footer__links-title">FAQ</h4>
-                            <ul class="footer__links-list">
-                                <li><a class="footer__links-item" href="#">Account</a></li>
-                                <li><a class="footer__links-item" href="#">Manage Deliveries</a></li>
-                                <li><a class="footer__links-item" href="#">Orders</a></li>
-                                <li><a class="footer__links-item" href="#">Payments</a></li>
-                            </ul>
-                        </div>
-    
-                        <div class="footer__links">
-                            <h4 class="footer__links-title">RESOURCES</h4>
-                            <ul class="footer__links-list">
-                                <li><a class="footer__links-item" href="#">Free eBooks</a></li>
-                                <li><a class="footer__links-item" href="#">Development Tutorial</a></li>
-                                <li><a class="footer__links-item" href="#">How to - Blog</a></li>
-                                <li><a class="footer__links-item" href="#">Youtube Playlist</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    </div>
-
-                    <div class="footer__root">
-                        <p class="footer__root-text">Shop.co © 2000-2023, All Rights Reserved</p>
-    
-                        <ul class="footer__root-payments">
-                            <li class="footer__root-img"><img src="./image/visa.svg" alt="visa"></li>
-                            <li class="footer__root-img"><img src="./image/mastercard.svg" alt="mastercard"></li>
-                            <li class="footer__root-img"><img src="./image/paypal.svg" alt="paypal"></li>
-                            <li class="footer__root-img"><img src="./image/apple-pay.svg" alt="apple-pay"></li>
-                            <li class="footer__root-img"><img src="./image/g-pay.svg" alt="g-pay"></li>
-                        </ul>
-                    </div>
+              <ul class="footer__block-icons">
+                <li class="footer__block-icon">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="footer__block-icon">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="footer__block-icon">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="footer__block-icon">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+              </ul>
             </div>
+
+            <div class="footer__navigation">
+              <div class="footer__links">
+                <h4 class="footer__links-title">COMPANY</h4>
+                <ul class="footer__links-list">
+                  <li><a class="footer__links-item" href="#">About</a></li>
+                  <li><a class="footer__links-item" href="#">Features</a></li>
+                  <li><a class="footer__links-item" href="#">Works</a></li>
+                  <li><a class="footer__links-item" href="#">Career</a></li>
+                </ul>
+              </div>
+
+              <div class="footer__links">
+                <h4 class="footer__links-title">HELP</h4>
+                <ul class="footer__links-list">
+                  <li>
+                    <a class="footer__links-item" href="#">Customar Support</a>
+                  </li>
+                  <li>
+                    <a class="footer__links-item" href="#">Delivery Details</a>
+                  </li>
+                  <li>
+                    <a class="footer__links-item" href="#"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer__links-item" href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer__links">
+                <h4 class="footer__links-title">FAQ</h4>
+                <ul class="footer__links-list">
+                  <li><a class="footer__links-item" href="#">Account</a></li>
+                  <li>
+                    <a class="footer__links-item" href="#">Manage Deliveries</a>
+                  </li>
+                  <li><a class="footer__links-item" href="#">Orders</a></li>
+                  <li><a class="footer__links-item" href="#">Payments</a></li>
+                </ul>
+              </div>
+
+              <div class="footer__links">
+                <h4 class="footer__links-title">RESOURCES</h4>
+                <ul class="footer__links-list">
+                  <li>
+                    <a class="footer__links-item" href="#">Free eBooks</a>
+                  </li>
+                  <li>
+                    <a class="footer__links-item" href="#"
+                      >Development Tutorial</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer__links-item" href="#">How to - Blog</a>
+                  </li>
+                  <li>
+                    <a class="footer__links-item" href="#">Youtube Playlist</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__root">
+            <p class="footer__root-text">
+              Shop.co © 2000-2023, All Rights Reserved
+            </p>
+
+            <ul class="footer__root-payments">
+              <li class="footer__root-img">
+                <img src="./image/visa.svg" alt="visa" />
+              </li>
+              <li class="footer__root-img">
+                <img src="./image/mastercard.svg" alt="mastercard" />
+              </li>
+              <li class="footer__root-img">
+                <img src="./image/paypal.svg" alt="paypal" />
+              </li>
+              <li class="footer__root-img">
+                <img src="./image/apple-pay.svg" alt="apple-pay" />
+              </li>
+              <li class="footer__root-img">
+                <img src="./image/g-pay.svg" alt="g-pay" />
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-  <script src="./js/review.js"></script>
-</body>
-
+    <script src="./js/review.js"></script>
+  </body>
 </html>
