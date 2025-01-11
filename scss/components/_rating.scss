@@ -1,22 +1,21 @@
-.rating{
-    display: inline-flex;
+.rating {
+  position: relative;
+  display: inline-block;
+  font-size: 19px;
+  line-height: 1;
+  color: gray;
 }
 
-.star {
-    font-size: 19px; 
-    cursor: pointer;
-    color: gray; 
+.stars-background {
+  color: gray;
 }
 
-.star:hover,
-.star:hover ~ .star {
-    color: var(--star-coolor); 
-}
-
-.star.selected {
-    color:var(--star-coolor); 
-}
-
-.rating-value{
-    @include text(14px,400, 1.35);
+.stars-filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  color: var(--star-coolor);
+  overflow: hidden;
+  white-space: nowrap;
 }

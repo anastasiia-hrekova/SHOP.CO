@@ -1,21 +1,23 @@
-.allview-btn{
-    width: 218px;
-    height: 52px;
-    background-color: transparent;
-    border: 1px solid #0000001A;
-    color: #000;
-    border-radius: 62px;
-    @include text(16px, 500, 1.36);
+.allview-btn {
+  width: 218px;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid #0000001a;
+  color: #000;
+  border-radius: 62px;
+  @include text(16px, 500, 1.36);
+  cursor: pointer;
 
-    &:hover{
-        background-color: #000;
+  &:hover {
+    background-color: #000;
     border: none;
     color: #fff;
-    }
+    transition: 0.3s ease;
+  }
 }
 
-.btn{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
