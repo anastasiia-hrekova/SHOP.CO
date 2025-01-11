@@ -1,55 +1,56 @@
-.form{
-    @include center;
-    flex-direction: column;
-    gap: 14px;
-    width: 30%;
+.form {
+  @include center;
+  flex-direction: column;
+  gap: 14px;
+  width: 30%;
+
+  @media screen and (max-width: 880px) {
+    width: 80%;
+  }
+
+  &__input {
+    width: 100%;
+    height: 48px;
+    border-radius: 62px;
+    background-color: #fff;
+    border: none;
+    color: var(--bacground-color);
+    padding-left: 52px;
+    position: relative;
 
     @media screen and (max-width: 880px) {
-        width: 80%;
+      padding-left: 45px;
     }
 
-    &__input{
-        width: 100%;
-        height: 48px;
-        border-radius: 62px;
-        background-color: #fff;
-        border: none;
-        color: var(--bacground-color);
-        padding-left: 52px;
-        position: relative;
+    &-icon {
+      position: absolute;
+      z-index: 2;
+      transform: translate(-150px, -31px);
 
-        @media screen and (max-width: 880px) {
-            padding-left: 45px;
-        }
+      @media screen and (max-width: 880px) {
+        transform: translate(-35vw, -31px);
+      }
 
-        &-icon{
-            position: absolute;
-            z-index: 2;
-            transform: translate(-150px, -31px);
-
-            @media screen and (max-width: 880px) {
-                transform: translate(-35vw, -31px);
-            }
-
-            @media screen and (max-width: 470px) {
-                transform: translate(-30vw, -31px);
-            }
-        }
+      @media screen and (max-width: 470px) {
+        transform: translate(-30vw, -31px);
+      }
     }
+  }
 
-    &__btn{
-        width: 100%;
-        height: 48px;
-        border-radius: 62px;
-        background-color: #fff;
-        border: none;
-        color: #000;
-        @include text(16px, 500, 1.35);
+  &__btn {
+    width: 100%;
+    height: 48px;
+    border-radius: 62px;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    @include text(16px, 500, 1.35);
+    cursor: pointer;
 
-        &:hover{
-            background-color: #000;
-            border: 1px solid #fff;
-        color: #fff;
-        }
+    &:hover {
+      background-color: #000;
+      border: 1px solid #fff;
+      color: #fff;
     }
+  }
 }

@@ -11,6 +11,7 @@
 
   &.is-open {
     transform: translateX(0);
+    cursor: pointer;
   }
 
   &__btn-close {
